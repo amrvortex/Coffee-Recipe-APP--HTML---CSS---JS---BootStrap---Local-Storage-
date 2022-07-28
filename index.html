@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Recipe App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css" />
+    <link rel="icon" type="image/x-icon" href="coffee-favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row m-4 text-center">
+        <h1 class="text-dark display-4 fw-normal">Coffee Brew Recieps</h1>
+        <p class="fs-5 text-muted">Add Custom for your home brews below.</p>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <form
+          action=""
+          id="recipe-form"
+          class="p-4 m-4 mb-5 row shadow-sm rounder-3 border border-dark"
+        >
+          <div class="form-group col-md-6 my-2">
+            <label for="name"> Name of Recipe</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="name"
+              class="form-control"
+              placeholder="e.g. Morning Coffee"
+            />
+          </div>
+
+          <div class="form-group col-md-6 my-2">
+            <label for="method"> Brew Method</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="method"
+              class="form-control"
+              placeholder="e.g., 60g of coffee with 1 cup of milk"
+            />
+          </div>
+          <div class="form-group col-md-6 my-2">
+            <label for="roast"> Roast</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="roast"
+              class="form-control"
+              placeholder="e.g., half roasted"
+            />
+          </div>
+          <div class="form-group col-md-6 my-2">
+            <label for="grind"> Grind Size</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="grind"
+              class="form-control"
+              placeholder="e.g., 30"
+            />
+          </div>
+          <div class="form-group col-md-6 my-2">
+            <label for="ratio"> Ratio</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="ratio"
+              class="form-control"
+              placeholder="e.g., 1:16"
+            />
+          </div>
+          <div class="form-group col-md-6 my-2">
+            <label for="note"> Notes (Optional)</label>
+            <input
+              type="text"
+              autocomplete="off"
+              id="note"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group mt-4">
+            <input
+              type="submit"
+              value="Add Recipe"
+              class="btn px-5 mx-auto btn-dark float-end"
+            />
+          </div>
+        </form>
+
+        <div class="container">
+          <div class="row m-4 border-bottom border-3 border-dark">
+            <p class="h3 text-dark">Saved Recipe</p>
+          </div>
+
+          <div
+            class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-sm-2 mx-4 my-5 text-center"
+            id="recipe-container"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.10/purify.min.js"></script>
+  </body>
+</html>
