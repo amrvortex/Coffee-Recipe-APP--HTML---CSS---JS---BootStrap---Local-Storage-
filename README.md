@@ -1,5 +1,9 @@
 # Coffee Recipe APP (HTML - CSS - JS - BootStrap - Local Storage)
  A Coffee Recipe App Using Bootstrap and LocalStorage
+ 
+# Responsive Design
+# Recipes can be added and removed dynamically
+# Recipes are stored in local storage
 
 ![image](https://user-images.githubusercontent.com/61240683/181651485-eb0b7ae9-2232-4e61-a582-b60efc566d43.png)
 ![image](https://user-images.githubusercontent.com/61240683/181651488-1e208772-03e7-4bf6-a284-32274b846e5e.png)
